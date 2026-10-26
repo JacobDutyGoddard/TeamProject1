@@ -1,10 +1,10 @@
-# Program Name
+# Number Guessing Game
 Jacob Duty, Aizen Cannon (The GOAT)
 
-## <program_name> Description
+## Number Guessing Game Description
 This program is a number guessing game, our first team project ever where Aizen demonstrates AWESOMENESS
 
-### <program_name> Flowchart
+### Number Guessing Game Chart
 ```mermaid
 graph TD;
   A-->B;
