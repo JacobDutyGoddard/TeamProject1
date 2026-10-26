@@ -17,15 +17,15 @@ graph TD;
 
 | `main()`    |               |  Jacob Duty  |
 | ------------------ | ------------- | ------------ |
-| `none`    | takes no input  |              |
+| `argument:none`    | takes no input  |              |
 | `none`     | runs display_menu() |
 | `none`      | returns nothing |
 ***
 | `display_menu()`    |               |     Jacob Duty, Aizen Cannon   |
 | ------------------ | ------------- | ------------ |
-| `argument:type`    | takes input from the user for ____  |              |
-| `time:integer`     | calculates ______  | outputs ____             |
-| `name:string`      | takes input for name ___ | returns total |
+| `argument:none`    | takes no arguments |
+| `none`     | prints out every option for the game | runs the function relevant to the choice |
+| `none`      | handles where to go to next | returns nothing |
 ***
 
 # TODO: ADD 4 MORE
