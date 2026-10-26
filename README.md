@@ -1,12 +1,29 @@
-# This is our first team project, which is intended to practice using GitHub and learning how to code collaboratively
+# Program Name
+Jacob Duty, Aizen Cannon (The GOAT)
 
-This program will be a number guessing game, and it will be split up. We're gonna have a menu based program that will:
-- When the "Start New Game" option is selected, the program should:
-- Prompt the players to enter their names.
-- Allow users to choose the range of values to guess (default range should be between 1 - 1000)
-- Generate a random number within the chosen range.
-- Allow the players to take turns guessing the number.
-- Provide feedback after each guess.
-- Keep track of the number of turns.
-- Display the winner and the number of turns it took to win
+## <program_name> Description
+This program is a number guessing game, our first team project ever where Aizen demonstrates AWESOMENESS
 
+### <program_name> Flowchart
+```mermaid
+graph TD;
+  A-->B;
+  A-->C;
+  A-->D;
+  A-->E;
+```
+
+#### Function Diagrams
+
+| `function name1`    |               |  author     |
+| ------------------ | ------------- | ------------ |
+| `argument:type`    | takes input from the user for ____  |              |
+| `time:integer`     | calculates ______  | outputs ____             |
+| `name:string`      | takes input for name ___ | returns total |
+***
+| `function name2`    |               |     author   |
+| ------------------ | ------------- | ------------ |
+| `argument:type`    | takes input from the user for ____  |              |
+| `time:integer`     | calculates ______  | outputs ____             |
+| `name:string`      | takes input for name ___ | returns total |
+***
