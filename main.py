@@ -1,4 +1,5 @@
-import random
+# All the functions used from gameLib are documented in that file, it imports library functions
+import gameLib
 
 game_player1 = ""
 game_player2 = ""
@@ -22,5 +23,7 @@ def display_menu():
     # It will return nothing
     pass
 
-def selectPlayers():
+def gatherPlayers():
     pass
+
+main()
