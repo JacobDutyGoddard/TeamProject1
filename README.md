@@ -28,4 +28,4 @@ graph TD;
 | `none`      | handles where to go to next | returns nothing |
 ***
 
-# TODO: ADD 4 MORE
+# TODO: DOCUMENT EVERY SINGLE FUNCTION JEEZ
