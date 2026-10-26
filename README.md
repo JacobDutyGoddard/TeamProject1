@@ -15,9 +15,9 @@ graph TD;
 
 #### Function Diagrams
 
-| `function name1`    |               |  author     |
+| `main()`    |               |  Jacob Duty     |
 | ------------------ | ------------- | ------------ |
-| `argument:type`    | takes input from the user for ____  |              |
+| `none`    | none  |              |
 | `time:integer`     | calculates ______  | outputs ____             |
 | `name:string`      | takes input for name ___ | returns total |
 ***
@@ -27,3 +27,5 @@ graph TD;
 | `time:integer`     | calculates ______  | outputs ____             |
 | `name:string`      | takes input for name ___ | returns total |
 ***
+
+# TODO: ADD 4 MORE
