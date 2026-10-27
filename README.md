@@ -27,5 +27,17 @@ graph TD;
 | `none`     | prints out every option for the game | runs the function relevant to the choice |
 | `none`      | handles where to go to next | returns nothing |
 ***
+| `gather_players()`    |               |     Jacob Duty, Aizen Cannon   |
+| ------------------ | ------------- | ------------ |
+| `argument:none`    | takes no arguments |
+| `none`     | prompts the user for 2 inputs | sets the value game_player1 and game_player2 |
+| `none`      | returns nothing | |
+***
+| `setRangeOfNumbers()`    |               |     Jacob Duty, Aizen Cannon   |
+| ------------------ | ------------- | ------------ |
+| `argument:none`    | takes no arguments |
+| `none`     | prints out every option for the game | runs the function relevant to the choice |
+| `none`      | handles where to go to next | returns nothing |
+***
 
 # TODO: DOCUMENT EVERY SINGLE FUNCTION JEEZ

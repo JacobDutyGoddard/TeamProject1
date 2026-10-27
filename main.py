@@ -24,6 +24,13 @@ def display_menu():
     pass
 
 def gatherPlayers():
+    # This function accepts any arguments
+    # It will prompt the user for 2 string inputs
+    # It will set the game_player1 to the first string, and then game_player2 to the second string
+    # It will return nothing
+    pass
+
+def setRangeOfNumbers():
     pass
 
 main()
