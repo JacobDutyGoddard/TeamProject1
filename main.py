@@ -1,5 +1,7 @@
 # All the functions used from gameLib are documented in that file, it imports library functions
 import gameLib
+# Random to generate our number
+import random
 
 def main():
     # AUTHOR: Jacob Duty
@@ -13,7 +15,8 @@ def main():
         game_player1, game_player2 = gatherPlayers()
         game_minimum, game_maximum = setRangeOfNumbers()
 
-
+        winner = game(game_player1, game_player2, game_minimum, game_maximum)
+        print(f"Congratulations {winner}!")
 
         game_looping = display_menu()
 
@@ -31,7 +34,7 @@ def display_menu():
     if(choice == 1):
         return "true"
     else:
-        print("Thank you for playing Aizen Cannons awesome game!")
+        print("Thank you for playing Aizen and Jacob's awesome game!")
         return "false"
 
 def gatherPlayers():
@@ -41,9 +44,9 @@ def gatherPlayers():
     # It will set the game_player1 to the first string, and then game_player2 to the second string
     # It will return nothing
     return gameLib.gatherStringInput("Please enter your first players name: "), gameLib.gatherStringInput("Please enter your second players name: ")
-    pass
 
 def setRangeOfNumbers():
+    # AUTHOR: Aizen Cannon
     # This function accepts no arguments
     # It will get 2 users inputs, a minimum and maximum number (USE gameLib.gatherNumberInput())
     # Verify to make sure the second number is not smaller
@@ -57,6 +60,7 @@ def setRangeOfNumbers():
         return max_number, min_number
 
 def setRangeOfNumbers():
+    # AUTHOR: Aizen Cannon
     # This function accepts no arguments
     # It will get 2 users inputs, a minimum and maximum number (USE gameLib.gatherNumberInput())
     # Verify to make sure the second number is not smaller
@@ -68,5 +72,31 @@ def setRangeOfNumbers():
         return min_number, max_number
     else:
         return max_number, min_number
+
+def game(player1, player2, min, max):
+    # AUTHOR: Jacob Duty, Aizen Cannon
+    integer = random.randint(min, max)
+    guess = -50
+
+    while guess != integer:
+        print(f"{player1}'s turn!")
+        guess = gameLib.gatherNumberInput(">")
+
+        if guess == integer:
+            return player1
+        elif guess > integer:
+            print("Too high!")
+        elif guess < integer:
+            print("Too low!")
+
+        print(f"{player2}'s turn!")
+        guess = gameLib.gatherNumberInput(">")
+        
+        if guess == integer:
+            return player1
+        elif guess > integer:
+            print("Too high!")
+        elif guess < integer:
+            print("Too low!")
 
 main()
