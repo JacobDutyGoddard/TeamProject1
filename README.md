@@ -8,9 +8,9 @@ This program is a number guessing game, our first team project ever where Aizen 
 ```Game
 graph TD;
   main()-->display_menu();
-  main()-->function2;
-  main()-->function3;
-  main()-->function4;
+  main()-->gatherPlayers();
+  main()-->setRangeOfNumbers();
+  main()-->game();
 ```
 
 #### Function Diagrams

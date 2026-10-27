@@ -61,6 +61,9 @@ def setRangeOfNumbers():
 
 def game(player1, player2, min, max):
     # AUTHOR: Jacob Duty, Aizen Cannon
+    # This function accepts 4 arguments, player1, player2, min, max
+    # It will create a random number and then loop until its guessed correctly
+    # It will provide feedback and then return who won
     correct_num = random.randint(min, max)
     guess = -50
 
