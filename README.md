@@ -42,8 +42,6 @@ graph TD;
 | `game()`    |               |    Jacob Duty, Aizen Cannon   |
 | ------------------ | ------------- | ------------ |
 | `argument:string:player1, string:player2, integer:min, integer:max`    | takes 4 arguments |
-| `integer:correct_num`     | prints out every option for the game | runs the function relevant to the choice |
-| `integer:game_maximum`      | handles where to go to next | returns nothing |
+| `integer:correct_num`     | decides a number | runs a loop until the player gets it right |
+| `integer:guess`      | swaps back and forth between players | returns winner |
 ***
-
-# TODO: DOCUMENT EVERY SINGLE FUNCTION JEEZ
