@@ -1,5 +1,5 @@
 # All the functions used from gameLib are documented in that file, it imports library functions
-import gameLib
+import lib
 # Random to generate our number
 import random
 
@@ -29,7 +29,7 @@ def display_menu():
     # It will return nothing
     print("1> Start a new game")
     print("2> Exit")
-    choice = gameLib.gatherNumberInput("\n>")
+    choice = lib.gatherNumberInput("\n>")
 
     if(choice == 1):
         return "true"
@@ -43,7 +43,7 @@ def gatherPlayers():
     # It will prompt the user for 2 string inputs
     # It will set the game_player1 to the first string, and then game_player2 to the second string
     # It will return nothing
-    return gameLib.gatherStringInput("Please enter your first players name: "), gameLib.gatherStringInput("Please enter your second players name: ")
+    return lib.gatherStringInput("Please enter your first players name: "), lib.gatherStringInput("Please enter your second players name: ")
 
 def setRangeOfNumbers():
     # AUTHOR: Aizen Cannon
@@ -51,8 +51,8 @@ def setRangeOfNumbers():
     # It will get 2 users inputs, a minimum and maximum number (USE gameLib.gatherNumberInput())
     # Verify to make sure the second number is not smaller
     # Change game_minimum to the first input, change game_maximum to the second input
-    min_number = gameLib.gatherNumberInput("Input the minimum number: ")
-    max_number = gameLib.gatherNumberInput("Input the maximum number: ")
+    min_number = lib.gatherNumberInput("Input the minimum number: ")
+    max_number = lib.gatherNumberInput("Input the maximum number: ")
 
     if(max_number > min_number):
         return min_number, max_number
@@ -69,7 +69,7 @@ def game(player1, player2, min, max):
 
     while guess != correct_num:
         print(f"{player1}'s turn!")
-        guess = gameLib.gatherNumberInput(">")
+        guess = lib.gatherNumberInput(">")
 
         if guess == correct_num:
             return player1
@@ -79,7 +79,7 @@ def game(player1, player2, min, max):
             print("Too low!")
 
         print(f"{player2}'s turn!")
-        guess = gameLib.gatherNumberInput(">")
+        guess = lib.gatherNumberInput(">")
         
         if guess == correct_num:
             return player1
