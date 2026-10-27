@@ -1,6 +1,5 @@
-# Any functions included in this file are small but important features condensed into these reusable library functions
-
-import random
+# Any functions included in this file are small but important features
+# Condensed into these reusable functions
 
 def gatherNumberInput(prompt="Please enter a number (FALLBACK): "):
     # AUTHOR: Jacob Duty
