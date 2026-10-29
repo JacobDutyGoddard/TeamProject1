@@ -68,7 +68,7 @@ def game(player1, player2, min, max):
     guess = -50
 
     while guess != correct_num:
-        print(f"{player1}'s turn!")
+        print(f"{player1}'s turn!z")
         guess = lib.gatherNumberInput(f"{min}-{max} |> ")
 
         if guess == correct_num:
