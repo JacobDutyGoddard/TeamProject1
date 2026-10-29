@@ -15,6 +15,19 @@ graph TD;
 
 #### Function Diagrams
 
+
+| `lib.gatherNumberInput()`    |               |  Jacob Duty  |
+| ------------------ | ------------- | ------------ |
+| `string:prompt`    | takes 1 argument  |              |
+| `none`     | gets users input with validation |   repeats until it fits the requirement  |
+| `none`      | returns the input |
+***
+| `lib.gatherStringInput()`    |               |  Jacob Duty  |
+| ------------------ | ------------- | ------------ |
+| `string:prompt`    | takes 1 argument  |              |
+| `none`     | gets users input |   |
+| `none`      | returns the string |
+***
 | `main()`    |               |  Jacob Duty  |
 | ------------------ | ------------- | ------------ |
 | `argument:none`    | takes no input  |              |
