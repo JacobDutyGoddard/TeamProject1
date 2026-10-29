@@ -69,23 +69,27 @@ def game(player1, player2, min, max):
 
     while guess != correct_num:
         print(f"{player1}'s turn!")
-        guess = lib.gatherNumberInput(">")
+        guess = lib.gatherNumberInput(f"{min}-{max} |> ")
 
         if guess == correct_num:
             return player1
         elif guess > correct_num:
+            max = guess
             print("Too high!")
         elif guess < correct_num:
+            min = guess
             print("Too low!")
 
         print(f"{player2}'s turn!")
-        guess = lib.gatherNumberInput(">")
+        guess = lib.gatherNumberInput(f"{min}-{max} |> ")
         
         if guess == correct_num:
-            return player1
+            return player2
         elif guess > correct_num:
+            max = guess
             print("Too high!")
         elif guess < correct_num:
+            min = guess
             print("Too low!")
 
 main()
