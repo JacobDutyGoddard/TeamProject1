@@ -59,37 +59,37 @@ def setRangeOfNumbers():
     else:
         return max_number, min_number
 
-def game(player1, player2, min, max):
+def game(player1, player2, MIN, MAX):
     # AUTHOR: Jacob Duty, Aizen Cannon
-    # This function accepts 4 arguments, player1, player2, min, max
+    # This function accepts 4 arguments, player1, player2, MIN, MAX
     # It will create a random number and then loop until its guessed correctly
     # It will provide feedback and then return who won
-    correct_num = random.randint(min, max)
+    correct_num = random.randint(MIN, MAX)
     guess = -50
 
     while guess != correct_num:
-        print(f"{player1}'s turn!z")
-        guess = lib.gatherNumberInput(f"{min}-{max} |> ")
+        print(f"{player1}'s turn!")
+        guess = lib.gatherNumberInput(f"{MIN}-{MAX} |> ")
 
         if guess == correct_num:
             return player1
         elif guess > correct_num:
-            max = guess
+            MAX = min(guess, MAX)
             print("Too high!")
         elif guess < correct_num:
-            min = guess
+            MIN = max(guess, MIN)
             print("Too low!")
 
         print(f"{player2}'s turn!")
-        guess = lib.gatherNumberInput(f"{min}-{max} |> ")
+        guess = lib.gatherNumberInput(f"{MIN}-{MAX} |> ")
         
         if guess == correct_num:
             return player2
         elif guess > correct_num:
-            max = guess
+            MAX = min(guess, MAX)
             print("Too high!")
         elif guess < correct_num:
-            min = guess
+            MIN = max(guess, MIN)
             print("Too low!")
 
 main()
